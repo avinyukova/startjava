@@ -17,7 +17,7 @@ public class VariablesTheme {
         System.out.println(" - Целое число");
         System.out.print(name_2);
         System.out.println(" - Целое число");
-        System.out.print(name_3);t
+        System.out.print(name_3);
         System.out.println(" - Целое число");
         System.out.print(name_4);
         System.out.println(" - Вещественное число");
@@ -26,9 +26,9 @@ public class VariablesTheme {
         System.out.print(name_6);
         System.out.println(" - Символ");
         System.out.print(name_7);
-        System.out.println(" - Логическое значение\n");
+        System.out.println(" - Логическое значение \n");
         
-        System.out.println("2 Расчет стоимости товара со скидкой\n");
+        System.out.println("2 Расчет стоимости товара со скидкой \n");
         int item1 = 200, item2 = 100;
         int sales = item1 + item2;
         System.out.println(sales);
@@ -101,32 +101,31 @@ public class VariablesTheme {
         System.out.printf("digi1 = %s digi2 = %s\n", digi1, digi2);
         
         System.out.println("6 Вывод символов и их кодов");
-        char ch1 = '#';
-        char ch2 = '&';
-        char ch3 = '@';
-        char ch4 = '^';
-        char ch5 = '_';
-        int ch6 = 35;
-        int ch7 = 38;
-        int ch8 = 64;
-        int ch9 = 94;
-        int ch10 = 95;
-        System.out.printf("%c %s\n %c %s\n %c %s\n %c %s\n %c %s\n", ch1, ch6, ch2, ch7, ch3, ch8, ch4, ch9, ch5, ch10);
+        char hashTag = '#';
+        char ampersand = '&';
+        char at = '@';
+        char caret = '^';
+        char underscore = '_';
+        System.out.printf("%c %s\n %c %s\n %c %s\n %c %s\n %c %s\n", hashTag, (int)hashTag,
+        ampersand, (int)ampersand, at, (int)at, caret, (int)caret, underscore, (int)underscore);
         
         System.out.println("7 Вывод в консоль ASCII-арт Дюка");
-        char ch11 = 47;
-        char ch12 = 92;
-        char ch13 = 95;
-        char ch14 = 40;
-        char ch15 = 41;
-        System.out.printf("     %c%c     \n    %c  %c    \n   %c%c%c %c%c \n  %c      %c \n %c%c%c%c%c%c%c%c%c%c \n", ch11, ch12, ch11, ch12, ch11, ch13, ch14, ch15, ch12, ch11, ch12, ch11, ch13, ch13, ch13, ch13, ch11, ch12, ch13, ch13, ch12);
+        char slash = 47;
+        char baskSlash = 92;
+        char lbbrk = 40;
+        char rbbrk = 41;
+        System.out.printf("     %c%c     \n    %c  %c    \n", slash, baskSlash, slash, baskSlash);
+        System.out.printf("   %c%c%c %c%c \n  %c      %c \n %c%c%c%c%c%c%c%c%c%c \n", slash, 
+        underscore, lbbrk, rbbrk, baskSlash, slash, baskSlash, slash, underscore, underscore,
+        underscore, underscore, slash, baskSlash, underscore, underscore, baskSlash);
         
         System.out.println("8 Вывод количества сотен, десятков и единиц числа");
         int number = 123;
-        int num1 = (number/100);
-        int num2 = (number/10);
-        int num3 = (number/1);
-        System.out.printf("Число 123 содержит:\n %d сотню\n %d десятков\n %d единицы\n", num1, num2, num3);
+        int number1 = (number / 100);
+        int number2 = (number % 100 / 10);
+        int number3 = (number % 100 % 20);
+        System.out.printf("Число 123 содержит:\n %d сотню\n %d десятков\n %d единицы\n", number1,
+        number2, number3);
         int digit1 = 1; 
         int digit2 = 2;
         int digit3 = 3; 
